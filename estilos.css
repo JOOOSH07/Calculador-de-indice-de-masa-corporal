@@ -1,0 +1,142 @@
+/* Estilo general para el cuerpo de la página */
+body{
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: beige;
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Estilo para el contenedor principal */
+.contenedor {
+    width: 400%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: beige;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la sección de descripción */
+.descripcion {
+    margin-bottom: 20px;
+}
+
+.descripcion h2 {
+    margin-top: 0;
+}
+
+.descripcion p {
+    line-height: 1.6;
+}
+
+/* Estilo para la tabla de categorías de IMC */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: cadetblue;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilo para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo para los botones del formulario */
+form button {
+    background-color: chocolate;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px 2px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo para el botón de encuesta */
+.boton-encuesta {
+    display: block;
+    width: auto; /* Ajusta el ancho para que no ocupe todo el espacio */
+    text-align: center;
+    padding: 15px;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+.boton-encuesta:hover {
+    background-color:lightseagreen;
+}
+
+/* Estilo para el fondo */
+.fondo {
+    background-image: url('Saludable.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Hace que el fondo ocupe toda la pantalla */
+    width: 100vw; /* 100% del ancho de la ventana */
+    height: 100vh; /* 100% del alto de la ventana */
+
+    /* Opcional: Si quieres mantener el padding */
+    padding: 50px;
+}

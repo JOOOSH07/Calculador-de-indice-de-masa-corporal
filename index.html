@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de Peso</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Indice De Masa Corporal</h1>
+    </header>
+
+    <div class="fondo">
+        <div class="contenedor">
+            
+            <section class="descripcion">
+                <h2>¿Cómo usar correctamente la aplicación?</h2>
+                <p>         
+Esta herramienta te permite estimar tu índice de masa corporal (IMC) para verificar si tienes bajo peso, peso adecuado o sobrepeso.
+Solo necesitas ingresar tu nombre, edad, estatura en metros y peso en los campos indicados, luego presionar el botón "Calcular IMC". La aplicación te mostrará tu IMC junto con una evaluación de tu estado de peso según las categorías comunes.
+También puedes completar una encuesta para compartir tus opiniones y sugerencias sobre la herramienta. Simplemente haz clic en el botón "Completar Encuesta" para acceder al formulario.
+                </p>
+
+            </section>
+
+            <div class="formulario">
+                <h2>Ingrese sus datos</h2>
+                <form id="pesoForm" action="datos.php" method="post">
+                    
+                    <label for="altura">Altura (en metros):</label>
+                    <input type="number" id="altura" step="0.01" name="altura" required>
+                    
+                    <label for="peso">Peso (en kg):</label>
+                    <input type="number" id="peso" name="peso" required>
+                    
+                    <label for="genero">Género:</label>
+                    <select id="genero" name="genero" required>
+                        <option value="" disabled selected>Seleccione tu género</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                    </select>
+
+                    <div class="botones">
+                        <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+                        <button type="button" onclick="calcularPesoIdeal()">Calcular Peso Ideal</button>
+                    </div>
+                </form>
+                <p id="resultado"></p>
+                <p id="pesoIdeal"></p>
+            </div>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTuLic8zR7nPQTiO0pFDVgMjU1ZiEetx1YIhFdkmfIjzSjUA/viewform?usp=sf_link" class="boton-encuesta" target="_blank">Realizar Encuesta De Satisfacción</a>
+        </div>
+    </div>
+
+    <script src="calculo_imc.js"></script>
+</body>
+</html>
